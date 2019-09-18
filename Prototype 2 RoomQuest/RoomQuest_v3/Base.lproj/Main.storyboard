@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RoomQuest_v3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kSo-yw-UWH" customClass="AGSMapView">
+                                <rect key="frame" x="0.0" y="-4" width="375" height="675"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEA-hY-mIe" userLabel="location_btn">
+                                        <rect key="frame" x="310" y="607" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                        <state key="normal" title="Button" image="current location"/>
+                                        <connections>
+                                            <action selector="location_btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mKh-ow-hIT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RK2-4N-til">
+                                        <rect key="frame" x="310" y="531" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                        <state key="normal" title="Button" image="magnifying glass"/>
+                                        <connections>
+                                            <action selector="showPopUpSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2rd-Jm-NG8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJV-H0-QfK">
+                                        <rect key="frame" x="15" y="40" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="hamburger"/>
+                                        <connections>
+                                            <action selector="showPopUpFloors:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vdM-hr-XIO"/>
+                                        </connections>
+                                    </button>
+                                    <view alpha="0.0" tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1e2-Ne-Vic">
+                                        <rect key="frame" x="36" y="189" width="300" height="300"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xhl-zC-qm3">
+                                                <rect key="frame" x="74" y="52" width="150" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Basement"/>
+                                                <connections>
+                                                    <action selector="showBasement:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6NH-hW-nRa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iW-Q0-Ti4">
+                                                <rect key="frame" x="74" y="90" width="150" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="First Floor"/>
+                                                <connections>
+                                                    <action selector="showFirstFloor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i4S-V8-P7w"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOb-Lj-yfv">
+                                                <rect key="frame" x="74" y="128" width="150" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Second Floor"/>
+                                                <connections>
+                                                    <action selector="showSecondFloor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="96A-JF-bmt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PH-BA-ztD">
+                                                <rect key="frame" x="74" y="166" width="150" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Third Floor"/>
+                                                <connections>
+                                                    <action selector="showFourthFloor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DPw-ep-OMZ"/>
+                                                    <action selector="showThirdFloor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lAR-U1-ImH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYq-xs-qFn">
+                                                <rect key="frame" x="74" y="204" width="150" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Fourth Floor"/>
+                                                <connections>
+                                                    <action selector="showFifthFloor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TyG-e1-9nE"/>
+                                                    <action selector="showFourthFloor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zHS-rK-nFP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37G-hg-caI">
+                                                <rect key="frame" x="74" y="242" width="150" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Fifth Floor"/>
+                                                <connections>
+                                                    <action selector="showFifthFloor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QL7-Oy-4FZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQv-Vp-V1E">
+                                                <rect key="frame" x="8" y="8" width="45" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="BACK" image="return icon "/>
+                                                <connections>
+                                                    <action selector="closePopUpFloors:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQo-oV-m64"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.84999999999999998" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view alpha="0.0" tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BaC-tT-6ss">
+                                        <rect key="frame" x="0.0" y="20" width="375" height="652"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckg-id-5rD">
+                                                <rect key="frame" x="24" y="57" width="75" height="75"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="bike "/>
+                                                <connections>
+                                                    <action selector="showBikes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OL6-TN-PWG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIP-lZ-W54">
+                                                <rect key="frame" x="150" y="179" width="75" height="75"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="atm"/>
+                                                <connections>
+                                                    <action selector="showATM:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WDp-U3-Mlp"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmG-bG-9aO">
+                                                <rect key="frame" x="276" y="57" width="75" height="75"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="hamburger_food"/>
+                                                <connections>
+                                                    <action selector="showFood:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sh0-12-Pgf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDb-RB-luH">
+                                                <rect key="frame" x="149.5" y="58" width="75" height="75"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="Evacuation Center"/>
+                                                <connections>
+                                                    <action selector="showEvacuation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fKq-3U-27i"/>
+                                                </connections>
+                                            </button>
+                                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Enter Room Number" translatesAutoresizingMaskIntoConstraints="NO" id="Rma-pj-axR">
+                                                <rect key="frame" x="-1" y="0.0" width="374" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" red="0.98212234258155218" green="1" blue="0.95809478583500152" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="barTintColor" red="0.14791753888130188" green="0.40516260266304016" blue="0.69162571430206299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </searchBar>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6RY-yZ-Dgh">
+                                                <rect key="frame" x="276" y="179" width="75" height="75"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="restrooms"/>
+                                                <connections>
+                                                    <action selector="showRestrooms:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ntr-Na-BGB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2E-bm-Zik">
+                                                <rect key="frame" x="24" y="567" width="60" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <state key="normal" title="Button" image="return icon "/>
+                                                <connections>
+                                                    <action selector="closePopUpSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="33d-Ue-dPd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3Y-k5-hVB">
+                                                <rect key="frame" x="24" y="179" width="75" height="75"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                <state key="normal" title="Button" image="health care "/>
+                                                <connections>
+                                                    <action selector="showFirstAid:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xQp-MZ-Z1c"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.97661593130000002" green="0.98391918270000001" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jKp-hj-yab">
+                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="nf5-ZV-52C"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="kSo-yw-UWH" id="Off-9q-OYy"/>
+                        <outlet property="popUpFloors" destination="1e2-Ne-Vic" id="6Qd-1Q-TAU"/>
+                        <outlet property="popUpSearch" destination="BaC-tT-6ss" id="fck-Yb-zRq"/>
+                        <outlet property="searchBar" destination="Rma-pj-axR" id="F1w-Vi-tYS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072.8" y="135.38230884557723"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Evacuation Center" width="961" height="962"/>
+        <image name="atm" width="918" height="918"/>
+        <image name="bike " width="918" height="918"/>
+        <image name="current location" width="918" height="917"/>
+        <image name="hamburger" width="918" height="918"/>
+        <image name="hamburger_food" width="918" height="918"/>
+        <image name="health care " width="918" height="918"/>
+        <image name="magnifying glass" width="918" height="917"/>
+        <image name="restrooms" width="917" height="917"/>
+        <image name="return icon " width="918" height="918"/>
+    </resources>
+</document>

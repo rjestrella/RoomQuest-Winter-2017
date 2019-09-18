@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0C71C3EAFCC61DE4F3B2C896805DF150C1B76F76",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "86CEF202A1260C921064B3176BDAA3A431689C0C" : 9223372036854775807,
+    "0C71C3EAFCC61DE4F3B2C896805DF150C1B76F76" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C0AA4CA0-0D24-4B99-B94F-E00FD07E766F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "86CEF202A1260C921064B3176BDAA3A431689C0C" : "..",
+    "0C71C3EAFCC61DE4F3B2C896805DF150C1B76F76" : "RoomQuest_v4\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RoomQuest_v3",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RoomQuest_v3.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/csusb\/roomquest.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0C71C3EAFCC61DE4F3B2C896805DF150C1B76F76"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/csusb\/roomquest.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "86CEF202A1260C921064B3176BDAA3A431689C0C"
+    }
+  ]
+}
